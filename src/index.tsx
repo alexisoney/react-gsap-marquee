@@ -1,1 +1,1 @@
-export { default as default } from "./components/Marquee";
+export { default as default } from "./Marquee";
