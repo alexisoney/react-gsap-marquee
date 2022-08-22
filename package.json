@@ -1,0 +1,66 @@
+{
+  "name": "react-gsap-marquee",
+  "version": "0.0.1",
+  "description": "A marquee component for React using GSAP",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "react",
+    "marquee",
+    "gsap",
+    "react-component",
+    "reactjs",
+    "carousel",
+    "slider",
+    "ticker",
+    "horizontal-scrolling-carousels"
+  ],
+  "author": "Alexis Oney <alexis.oney@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack4": "^6.5.10",
+    "@storybook/manager-webpack4": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/react": "^16.14.30",
+    "@types/react-dom": "^16.9.16",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "babel-loader": "^8.2.5",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-storybook": "^0.6.4",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "rollup": "^2.78.0",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "gsap": "^3.11.0"
+  },
+  "lint-staged": {
+    "*.{tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "files": [
+    "dist"
+  ]
+}
