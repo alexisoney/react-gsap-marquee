@@ -1,6 +1,6 @@
 {
   "name": "react-gsap-marquee",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A marquee component for React using GSAP",
   "main": "dist/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prepare": "husky install",
-    "publish": "npm run build && npm publish"
+    "publish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -64,7 +64,7 @@
     "typescript": "^4.7.4"
   },
   "peerDependencies": {
-    "gsap": ">=3",
+    "gsap": ">=3.11.0",
     "react": "^16 || ^17 || ^18",
     "react-dom": "^16 || ^17 || ^18"
   },
