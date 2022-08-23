@@ -67,7 +67,7 @@
     "react-dom": "^16 || ^17 || ^18"
   },
   "lint-staged": {
-    "*.{tsx}": [
+    "*.tsx": [
       "eslint --fix"
     ]
   },
