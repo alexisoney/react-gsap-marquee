@@ -1,6 +1,6 @@
 {
   "name": "react-gsap-marquee",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A marquee component for React using GSAP",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "start": "rollup -c -w",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "publish": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -41,8 +42,8 @@
     "@storybook/manager-webpack4": "^6.5.10",
     "@storybook/react": "^6.5.10",
     "@storybook/testing-library": "^0.0.13",
-    "@types/react": "^16.14.30",
-    "@types/react-dom": "^16.9.16",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "@typescript-eslint/parser": "^5.33.1",
     "babel-loader": "^8.2.5",
@@ -51,24 +52,24 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-storybook": "^0.6.4",
+    "gsap": "^3.11.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^2.78.0",
+    "rollup-plugin-cleaner": "^1.0.0",
     "rollup-plugin-typescript2": "^0.32.1",
     "typescript": "^4.7.4"
   },
-  "dependencies": {
-    "gsap": "^3.11.0"
-  },
   "peerDependencies": {
+    "gsap": ">=3",
     "react": "^16 || ^17 || ^18",
     "react-dom": "^16 || ^17 || ^18"
   },
   "lint-staged": {
-    "*.{tsx}": [
+    "*.tsx": [
       "eslint --fix"
     ]
   },

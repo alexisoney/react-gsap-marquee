@@ -152,11 +152,13 @@ const Marquee = ({
       // Get amount of clones needed
       const count = Math.ceil(section.clientWidth / child.clientWidth) + 1;
 
-      // Create clones
-      for (let i = 0; i < count; i++) {
-        const clone = child.cloneNode(true) as HTMLElement;
-        clone.dataset.isClone = "true";
-        container.appendChild(clone);
+      if (count !== Infinity) {
+        // Create clones
+        for (let i = 0; i < count; i++) {
+          const clone = child.cloneNode(true) as HTMLElement;
+          clone.dataset.isClone = "true";
+          container.appendChild(clone);
+        }
       }
     }
 

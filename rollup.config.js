@@ -1,4 +1,5 @@
 import typescript from "rollup-plugin-typescript2";
+import cleaner from "rollup-plugin-cleaner";
 import pkg from "./package.json";
 
 export default {
@@ -12,6 +13,17 @@ export default {
       strict: false,
     },
   ],
-  plugins: [typescript({ objectHashIgnoreUnknownHack: true })],
+  plugins: [
+    cleaner({
+      targets: ["./dist/"],
+    }),
+    typescript({
+      check: false,
+      objectHashIgnoreUnknownHack: true,
+      tsconfigOverride: {
+        exclude: ["**/*.stories.tsx"],
+      },
+    }),
+  ],
   external: ["react", "react-dom"],
 };
