@@ -1,6 +1,6 @@
 {
   "name": "react-gsap-marquee",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A marquee component for React using GSAP",
   "main": "dist/index.js",
   "scripts": {

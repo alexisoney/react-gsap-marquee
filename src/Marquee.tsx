@@ -107,9 +107,10 @@ const Marquee = ({
             const velocity = Math.abs(self.getVelocity());
 
             if (velocity > 200) {
-              const speed =
-                (velocity >= maxVelocity ? maxVelocity : velocity) *
-                (velocityFactor / 100);
+              const speed = maxVelocity
+                ? (velocity >= maxVelocity ? maxVelocity : velocity) *
+                  (velocityFactor / 100)
+                : 1;
               const direction = reverseOnScrollUp ? self.direction : 1;
               const timestamp = Date.now();
 

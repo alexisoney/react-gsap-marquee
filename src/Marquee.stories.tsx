@@ -64,6 +64,12 @@ ReverseOnScrollUp.args = {
   reverseOnScrollUp: false,
 };
 
+export const VelocityOff = Template.bind({});
+VelocityOff.args = {
+  ...Default.args,
+  maxVelocity: 0,
+};
+
 export const WithReactNode = Template.bind({});
 WithReactNode.args = {
   children: (
